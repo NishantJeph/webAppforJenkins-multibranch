@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('Stage 1 Compile') {
             steps {
-              sh 'mvn clean compile'
+              eecho 'This is main branch'
 
             }
         }
         
          stage('Stage 2 test') {
             steps {
-                sh 'mvn test'
+                echo 'welcome'
 		
             }
         }
